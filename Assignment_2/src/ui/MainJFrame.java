@@ -6,8 +6,11 @@ package ui;
 
 import java.awt.CardLayout;
 import javax.swing.JSplitPane;
+import model.Address;
+import model.Person;
 import model.PersonDirectory;
 import ui.PersonManager.CreatePersonJPanel;
+import ui.PersonManager.ManagePersonsJPanel;
 
 /**
  *
@@ -22,7 +25,7 @@ public class MainJFrame extends javax.swing.JFrame {
     public MainJFrame() {
         initComponents();
         this.personDirectory=new PersonDirectory();
-        //generateDemoData();
+        generateDemoData();
     }
 
     /**
@@ -118,7 +121,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewActionPerformed
         // TODO add your handling code here:
-        
+         ManagePersonsJPanel panel=new ManagePersonsJPanel(userProcessContainer,personDirectory);
+        userProcessContainer.add("ManageAccount Working",panel);
+        CardLayout layout=(CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
     }//GEN-LAST:event_btnViewActionPerformed
 
     /**
@@ -163,5 +169,16 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JSplitPane jSplitPane2;
     private javax.swing.JPanel userProcessContainer;
     // End of variables declaration//GEN-END:variables
-
+private void generateDemoData(){
+    Person newPerson=personDirectory.addPerson();
+    newPerson.setFirstName("Prachi");
+    newPerson.setLastName("Pradhan");
+    newPerson.setSSN("445558642");
+    newPerson.setAge(12);
+    Address haddr1=new Address("tremont Street","901","Boston","MA","01210","45451511");
+    newPerson.setHomeAddress(haddr1);
+    Address waddr1=new Address("tremont Street","981","Boston","MA","01210","45451511");
+    newPerson.setWorkAddress(waddr1);
+    
+}
 }
