@@ -186,11 +186,48 @@ private void generateDemoData(){
     newPerson.setFirstName("Prachi");
     newPerson.setLastName("Pradhan");
     newPerson.setSSN("445558642");
-    newPerson.setAge(12);
-    Address haddr1=new Address("tremont Street","901","Boston","MA","01210","45451511");
+    newPerson.setAge(24);
+    Address haddr1=new Address("tremont Street","901","Boston","MA","01210","4545151185");
     newPerson.setHomeAddress(haddr1);
-    Address waddr1=new Address("tremont Street","981","Boston","MA","01210","45451511");
+    Address waddr1=new Address("tremont Street","981","Boston","MA","01210","4545151154");
     newPerson.setWorkAddress(waddr1);
+    Person newPerson1=personDirectory.addPerson();
+    newPerson1.setFirstName("Tushar");
+    newPerson1.setLastName("Dete");
+    newPerson1.setSSN("585965896");
+    newPerson1.setAge(24);
+    Address haddr2=new Address("bolyston Street","985","NYC","NY","01210","87459123545");
+    newPerson1.setHomeAddress(haddr2);
+    Address waddr2=new Address("Brookline Street","951","NYC","NY","01210","48513958745");
+    newPerson1.setWorkAddress(waddr2);
+    Person newPerson2=personDirectory.addPerson();
+    newPerson2.setFirstName("Prathamesh");
+    newPerson2.setLastName("Pradhan");
+    newPerson2.setSSN("87459615");
+    newPerson2.setAge(22);
+    Address haddr3=new Address("Roxbury Street","859","San jose","california","01510","8459123445");
+    newPerson2.setHomeAddress(haddr3);
+    Address waddr3=new Address("Bolyston Street","542","San Jose","California","06910","75945631545");
+    newPerson2.setWorkAddress(waddr3);
+    Person newPerson3=personDirectory.addPerson();
+    newPerson3.setFirstName("Sneha");
+    newPerson3.setLastName("Indulkar");
+    newPerson3.setSSN("85421395");
+    newPerson3.setAge(24);
+    Address haddr4=new Address("Alponso Street","745","dallas","texas","58745","78459654654");
+    newPerson3.setHomeAddress(haddr4);
+    Address waddr4=new Address("tremont Street","754","dallas","texas","42658","4545151145");
+    newPerson3.setWorkAddress(waddr4);
+    Person newPerson5=personDirectory.addPerson();
+    newPerson5.setFirstName("Srushti");
+    newPerson5.setLastName("Patil");
+    newPerson5.setSSN("78459654");
+    newPerson5.setAge(25);
+    Address haddr5=new Address("Medford Street","122","Boston","MA","84556","7845931523");
+    newPerson5.setHomeAddress(haddr5);
+    Address waddr5=new Address("Heath Street","855","Boston","MA","754125","4854593612");
+    newPerson5.setWorkAddress(waddr5);
+    
     
 }
 }
