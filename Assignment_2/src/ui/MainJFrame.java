@@ -51,6 +51,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(java.awt.Color.lightGray);
+
+        btnView.setBackground(new java.awt.Color(255, 255, 204));
+        btnView.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         btnView.setText("List Person");
         btnView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,6 +62,8 @@ public class MainJFrame extends javax.swing.JFrame {
             }
         });
 
+        btnCreate.setBackground(new java.awt.Color(255, 255, 204));
+        btnCreate.setFont(new java.awt.Font("Yu Gothic UI", 1, 12)); // NOI18N
         btnCreate.setText("Add Person");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
