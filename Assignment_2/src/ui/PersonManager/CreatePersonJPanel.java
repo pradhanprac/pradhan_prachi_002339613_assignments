@@ -353,6 +353,7 @@ public class CreatePersonJPanel extends javax.swing.JPanel {
             Age=Integer.parseInt(txtAge.getText());
         }
         catch(Exception e){
+            
             JOptionPane.showMessageDialog(this,"  Please check the Age input","Error",JOptionPane.WARNING_MESSAGE);
         return;
         }

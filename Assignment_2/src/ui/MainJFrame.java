@@ -26,6 +26,12 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
         this.personDirectory=new PersonDirectory();
         generateDemoData();
+        ManagePersonsJPanel panel=new ManagePersonsJPanel(userProcessContainer,personDirectory);
+        userProcessContainer.add("ManageAccount Working",panel);
+        CardLayout layout=(CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+       
+        
     }
 
     /**

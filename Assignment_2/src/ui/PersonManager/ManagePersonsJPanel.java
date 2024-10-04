@@ -139,7 +139,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
             String personNumber = txtSearchBox.getText();
             Person foundPerson = personDirectory.searchPerson(personNumber);
             if(foundPerson != null){
-                ViewAccountJPanel panel = new ViewAccountJPanel(userProcessContainer,personDirectory,foundAccount);
+                ViewPersonJPanel panel = new ViewPersonJPanel(userProcessContainer,personDirectory,foundPerson);
                 userProcessContainer.add("ViewJPanel",panel);
                 CardLayout layout= (CardLayout) userProcessContainer.getLayout();
                 layout.next(userProcessContainer);
@@ -154,12 +154,38 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnSearchActionPerformed
 
     private void btnViewDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDetailsActionPerformed
-        // TODO add your handling code here:
+
+ int selectedRow=tblPersons.getSelectedRow();
+        if(selectedRow>=0){
+             Person selectedPerson= (Person)tblPersons.getValueAt(selectedRow,0);
+             ViewPersonJPanel panel=new ViewPersonJPanel(userProcessContainer,personDirectory,selectedPerson);
+        userProcessContainer.add("ViewAccountJPanel Working",panel);
+        CardLayout layout=(CardLayout) userProcessContainer.getLayout();
+        layout.next(userProcessContainer);
+        }
+        else
+            JOptionPane.showMessageDialog(null,"Please select an account from the list.","Warning",JOptionPane.WARNING_MESSAGE);        // TODO add your handling code here:
        
     }//GEN-LAST:event_btnViewDetailsActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        // TODO add your handling code here:
+
+ int selectedRow=tblPersons.getSelectedRow();
+        if(selectedRow>=0){
+            int dialogButton=JOptionPane.YES_NO_OPTION;
+            int dialogResult=JOptionPane.showConfirmDialog(null,"Are you sure you want to delete this person record","Warning",dialogButton);
+            if(dialogResult==JOptionPane.YES_OPTION){
+                Person selectedPerson= (Person)tblPersons.getValueAt(selectedRow,0);
+                personDirectory.deletePerson(selectedPerson);
+                populateTable();
+                
+                
+            }
+            
+            
+        }
+        else
+            JOptionPane.showMessageDialog(null,"Please select an amount from the list.","Warning",JOptionPane.WARNING_MESSAGE);        // TODO add your handling code here:
       
     }//GEN-LAST:event_btnDeleteActionPerformed
 
