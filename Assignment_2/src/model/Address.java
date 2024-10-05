@@ -15,9 +15,9 @@ public class Address {
     private String city;
     private String state;
     private String zipCode;
-    private String phoneno;
+    private long phoneno;
 
-    public Address(String streetaddress, String unitno, String city, String state, String zipCode, String phoneno) {
+    public Address(String streetaddress, String unitno, String city, String state, String zipCode, long phoneno) {
         this.streetaddress = streetaddress;
         this.unitno = unitno;
         this.city = city;
@@ -66,11 +66,11 @@ public class Address {
         this.zipCode = zipCode;
     }
 
-    public String getPhoneno() {
+    public long getPhoneno() {
         return phoneno;
     }
 
-    public void setPhoneno(String phoneno) {
+    public void setPhoneno(long phoneno) {
         this.phoneno = phoneno;
     }
     

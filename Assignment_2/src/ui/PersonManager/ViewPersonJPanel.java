@@ -357,21 +357,23 @@ public class ViewPersonJPanel extends javax.swing.JPanel {
         String homecity=txtHCity.getText();
         String homestate=txtHState.getText();
         String homezip=txtHZipCode.getText();
-        String homephone=txtHPhoneNumber.getText();
+        Long homephone;
         String workstreet=txtWStreetAddress.getText();
         String workUN=txtWUnitNumber.getText();
         String workcity=txtWCity.getText();
         String workstate=txtWState.getText();
         String workzip=txtWZipCode.getText();
-        String workphone=txtWPhoneNumber.getText();
+        Long workphone;
 
-        if(lname.isBlank()||fname.isBlank()||ssn.isBlank()||homestreet.isBlank()||homecity.isBlank()||homestate.isBlank()||homecity.isBlank()||homezip.isBlank()||homephone.isBlank()||workstreet.isBlank()||workUN.isBlank()||homeUN.isBlank()||workcity.isBlank()||workstate.isBlank()||workzip.isBlank()||workphone.isBlank()){
+        if(lname.isBlank()||fname.isBlank()||ssn.isBlank()||homestreet.isBlank()||homecity.isBlank()||homestate.isBlank()||homecity.isBlank()||homezip.isBlank()||workstreet.isBlank()||workUN.isBlank()||homeUN.isBlank()||workcity.isBlank()||workstate.isBlank()||workzip.isBlank()){
             JOptionPane.showMessageDialog(this,"All fields are mandatory","Error",JOptionPane.ERROR_MESSAGE);
             return;
 
         }
         try{
             Age=Integer.parseInt(txtAge.getText());
+            homephone=Long.parseLong(txtHPhoneNumber.getText());
+            workphone=Long.parseLong(txtWPhoneNumber.getText());
         }
         catch(Exception e){
 
@@ -481,13 +483,13 @@ private void refreshTextFields(){
     txtHCity.setText(person.getHomeAddress().getCity());
     txtHState.setText(person.getHomeAddress().getState());
     txtHZipCode.setText(person.getHomeAddress().getZipCode());
-    txtHPhoneNumber.setText(person.getHomeAddress().getPhoneno());
+    txtHPhoneNumber.setText(String.valueOf(person.getHomeAddress().getPhoneno()));
     txtWStreetAddress.setText(person.getWorkAddress().getStreetaddress());
     txtWUnitNumber.setText(person.getWorkAddress().getUnitno());
     txtWCity.setText(person.getWorkAddress().getCity());
     txtWState.setText(person.getWorkAddress().getState());
     txtWZipCode.setText(person.getWorkAddress().getZipCode());
-    txtWPhoneNumber.setText(person.getWorkAddress().getPhoneno());
+    txtWPhoneNumber.setText(String.valueOf(person.getWorkAddress().getPhoneno()));
     
     
     
