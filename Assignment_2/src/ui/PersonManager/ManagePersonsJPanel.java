@@ -90,7 +90,7 @@ public class ManagePersonsJPanel extends javax.swing.JPanel {
 
         btnDelete.setBackground(new java.awt.Color(204, 255, 204));
         btnDelete.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        btnDelete.setText("Delete Account");
+        btnDelete.setText("Delete Person");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);

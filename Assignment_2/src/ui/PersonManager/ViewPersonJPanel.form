@@ -38,6 +38,7 @@
                                   <Component id="lblHState" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblHZipCode" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblHPhoneNumber" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
@@ -50,9 +51,10 @@
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="txtSSN" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
-                                          <Component id="txtfname" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="txtSSN" alignment="0" pref="184" max="32767" attributes="0"/>
+                                          <Component id="txtfname" alignment="0" pref="184" max="32767" attributes="0"/>
+                                          <Component id="txtSalary" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -94,7 +96,7 @@
                                           <Component id="txtWCity" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtWState" alignment="0" max="32767" attributes="0"/>
                                           <Component id="txtWZipCode" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtWPhoneNumber" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                          <Component id="txtWPhoneNumber" alignment="1" min="-2" pref="149" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -108,7 +110,7 @@
                       <Component id="btnUpdate" min="-2" pref="136" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="456" max="32767" attributes="0"/>
+              <EmptySpace pref="451" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -131,7 +133,12 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="lblSSN" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtSalary" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
@@ -148,71 +155,47 @@
                   <Component id="lblHomeAddress" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblWorkAddress" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHState" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHState" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblHPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtHPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWCity" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWState" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWState" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblWPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtWPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWStreetAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWUnitNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWCity" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHState" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHState" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWState" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWState" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblHPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtHPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblWPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtWPhoneNumber" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -244,8 +227,14 @@
     <Component class="javax.swing.JTextField" name="txtWState">
     </Component>
     <Component class="javax.swing.JTextField" name="txtWZipCode">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtWZipCodeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtWPhoneNumber">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtWPhoneNumberActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblWStreetAddress">
       <Properties>
@@ -333,7 +322,7 @@
     <Component class="javax.swing.JLabel" name="lblHomeAddress">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="0"/>
+          <Font name="Times New Roman" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Home Address"/>
       </Properties>
@@ -369,7 +358,7 @@
     <Component class="javax.swing.JLabel" name="lblWorkAddress">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="14" style="0"/>
+          <Font name="Times New Roman" size="14" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Work Address"/>
       </Properties>
@@ -426,6 +415,13 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Salary"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtSalary">
     </Component>
   </SubComponents>
 </Form>

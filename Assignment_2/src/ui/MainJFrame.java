@@ -189,6 +189,7 @@ private void generateDemoData(){
     newPerson.setLastName("Pradhan");
     newPerson.setSSN("445558642");
     newPerson.setAge(24);
+    newPerson.setSalary((float) 58000.20);
     Address haddr1=new Address("tremont Street","901","Boston","MA","01210",4545511805l);
     newPerson.setHomeAddress(haddr1);
     Address waddr1=new Address("tremont Street","981","Boston","MA","01210",4545151154l);
@@ -198,6 +199,7 @@ private void generateDemoData(){
     newPerson1.setLastName("Dete");
     newPerson1.setSSN("585965896");
     newPerson1.setAge(24);
+    newPerson1.setSalary((float) 80000.20);
     Address haddr2=new Address("bolyston Street","985","NYC","NY","01210",87459123545l);
     newPerson1.setHomeAddress(haddr2);
     Address waddr2=new Address("Brookline Street","951","NYC","NY","01210",48513958745l);
@@ -207,6 +209,7 @@ private void generateDemoData(){
     newPerson2.setLastName("Pradhan");
     newPerson2.setSSN("87459615");
     newPerson2.setAge(22);
+    newPerson2.setSalary((float) 55500.20);
     Address haddr3=new Address("Roxbury Street","859","San jose","california","01510",8459123445l);
     newPerson2.setHomeAddress(haddr3);
     Address waddr3=new Address("Bolyston Street","542","San Jose","California","06910",75945631545l);
@@ -216,6 +219,7 @@ private void generateDemoData(){
     newPerson3.setLastName("Indulkar");
     newPerson3.setSSN("85421395");
     newPerson3.setAge(24);
+    newPerson3.setSalary((float) 8560.20);
     Address haddr4=new Address("Alponso Street","745","dallas","texas","58745",78459654654l);
     newPerson3.setHomeAddress(haddr4);
     Address waddr4=new Address("tremont Street","754","dallas","texas","42658",4545151145l);
@@ -225,6 +229,7 @@ private void generateDemoData(){
     newPerson5.setLastName("Patil");
     newPerson5.setSSN("78459654");
     newPerson5.setAge(25);
+    newPerson5.setSalary((float) 87450.20);
     Address haddr5=new Address("Medford Street","122","Boston","MA","84556",7845931523l);
     newPerson5.setHomeAddress(haddr5);
     Address waddr5=new Address("Heath Street","855","Boston","MA","754125",4854593612l);

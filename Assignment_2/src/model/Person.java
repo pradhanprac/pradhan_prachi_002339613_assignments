@@ -14,8 +14,17 @@ public class Person {
     private String lastName;
     private String SSN;
     private int age;
+    private float salary;
     private Address homeAddress;
     private Address workAddress;
+
+    public float getSalary() {
+        return salary;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
+    }
 
     public String getFirstName() {
         return firstName;
