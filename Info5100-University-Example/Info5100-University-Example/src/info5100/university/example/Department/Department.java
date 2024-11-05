@@ -38,12 +38,7 @@ public class Department {
 
     public Department(String n) {
         name = n;
-        mastercoursecatalog = new HashMap<>();
-        coursecatalog = new CourseCatalog(this);
-        studentdirectory = new StudentDirectory(this); //pass the department object so it stays linked to it
-        persondirectory = new PersonDirectory();
-        facultydirectory = new FacultyDirectory(this);
-        degree = new Degree("MSIS");
+       
 
     }
 
