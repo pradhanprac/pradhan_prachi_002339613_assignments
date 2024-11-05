@@ -96,7 +96,13 @@ public class Department {
         return c;
     }
 
-  
+    public int calculateRevenuesBySemester(String semester) {
+
+        CourseSchedule css = mastercoursecatalog.get(semester);
+
+        return css.calculateTotalRevenues();
+
+    }
 
     public void RegisterForAClass(String studentid, String cn, String semester) {
 
@@ -138,7 +144,7 @@ public void printStudentReport(String semester) {
         
         double gpa = student.calculateGPA(semester);
         System.out.println("Total Tuition: $" + totalTuition);
-        System.out.println("Average GPA: " + gpa);
+        System.out.println("Average GPA: " +  String.format("%.2f",gpa));
         System.out.println("------------------------------");
     }
 }
