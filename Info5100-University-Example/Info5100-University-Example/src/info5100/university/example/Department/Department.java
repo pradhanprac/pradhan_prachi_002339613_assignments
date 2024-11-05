@@ -150,7 +150,10 @@ public void printStudentReport(String semester) {
             totalTuition += courseFee;
         }
         
-        
+        double gpa = student.calculateGPA(semester);
+        System.out.println("Total Tuition: $" + totalTuition);
+        System.out.println("Average GPA: " +  String.format("%.2f",gpa));
+        System.out.println("------------------------------");
     }
 }
 }
