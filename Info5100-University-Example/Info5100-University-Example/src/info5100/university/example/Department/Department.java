@@ -96,13 +96,7 @@ public class Department {
         return c;
     }
 
-    public int calculateRevenuesBySemester(String semester) {
-
-        CourseSchedule css = mastercoursecatalog.get(semester);
-
-        return css.calculateTotalRevenues();
-
-    }
+  
 
     public void RegisterForAClass(String studentid, String cn, String semester) {
 
