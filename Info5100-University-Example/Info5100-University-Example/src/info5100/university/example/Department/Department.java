@@ -32,13 +32,26 @@ public class Department {
     StudentDirectory studentdirectory;
     FacultyDirectory facultydirectory;
     EmployerDirectory employerdirectory;
+
+    public EmployerDirectory getEmployerdirectory() {
+        return employerdirectory;
+    }
+
+    public void setEmployerdirectory(EmployerDirectory employerdirectory) {
+        this.employerdirectory = employerdirectory;
+    }
     Degree degree;
 
     HashMap<String, CourseSchedule> mastercoursecatalog;
 
     public Department(String n) {
         name = n;
-       
+        mastercoursecatalog = new HashMap<>();
+        coursecatalog = new CourseCatalog(this);
+        studentdirectory = new StudentDirectory(this); //pass the department object so it stays linked to it
+        persondirectory = new PersonDirectory();
+        facultydirectory = new FacultyDirectory(this);
+        degree = new Degree("MSIS");
 
     }
 

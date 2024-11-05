@@ -14,6 +14,14 @@ import info5100.university.example.CourseSchedule.CourseOffer;
 public class FacultyAssignment {
     double tracerating; //the professor as ranked by the students
     CourseOffer courseoffer;
+
+    public CourseOffer getCourseoffer() {
+        return courseoffer;
+    }
+
+    public void setCourseoffer(CourseOffer courseoffer) {
+        this.courseoffer = courseoffer;
+    }
     FacultyProfile facultyprofile;
     public FacultyAssignment(FacultyProfile fp, CourseOffer co){
         this.courseoffer = co;
